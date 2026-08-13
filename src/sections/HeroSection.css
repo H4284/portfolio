@@ -85,6 +85,7 @@
 @media (max-width: 767px) {
   .hero {
     min-height: 100vh;
+    padding-top: calc(var(--nav-height) + 0.75rem);
   }
 }
 
