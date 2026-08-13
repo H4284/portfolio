@@ -1,0 +1,50 @@
+.strength-card {
+  padding: var(--space-card);
+  text-align: center;
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base),
+    border-color var(--transition-base);
+}
+
+.strength-card:hover {
+  transform: translateY(var(--card-hover-lift));
+  box-shadow: var(--shadow-md);
+  border-color: var(--card-hover-border);
+}
+
+.strength-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 1.25rem;
+  border-radius: var(--radius-md);
+  background: var(--gradient-subtle);
+  border: var(--border-glass);
+  color: var(--color-accent-secondary);
+}
+
+.strength-card__icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.strength-card__title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 0.625rem;
+}
+
+.strength-card__desc {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 767px) {
+  .strength-card {
+    padding: var(--space-card-mobile);
+  }
+}

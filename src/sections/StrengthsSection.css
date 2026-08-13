@@ -1,0 +1,17 @@
+.strengths-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-grid);
+}
+
+@media (min-width: 640px) {
+  .strengths-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 960px) {
+  .strengths-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

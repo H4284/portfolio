@@ -1,0 +1,26 @@
+.skills-section {
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(99, 102, 241, 0.03) 50%,
+    transparent 100%
+  );
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-grid);
+}
+
+@media (min-width: 640px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 960px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
