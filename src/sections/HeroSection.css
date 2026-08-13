@@ -84,9 +84,8 @@
 
 @media (max-width: 767px) {
   .hero {
-    align-items: flex-start;
+    min-height: 100vh;
     min-height: 100svh;
-    padding-top: calc(var(--nav-height) + 0.75rem);
   }
 }
 
