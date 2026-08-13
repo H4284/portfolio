@@ -82,6 +82,14 @@
   color: var(--color-text-subtle);
 }
 
+@media (max-width: 767px) {
+  .hero {
+    align-items: flex-start;
+    min-height: 100svh;
+    padding-top: calc(var(--nav-height) + 0.75rem);
+  }
+}
+
 @media (min-width: 900px) {
   .hero__inner {
     grid-template-columns: 1fr 1fr;
