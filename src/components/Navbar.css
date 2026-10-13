@@ -54,7 +54,9 @@
 
 .navbar__links {
   display: flex;
-  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 1.25rem;
 }
 
 .navbar__links a {
@@ -176,7 +178,7 @@
   color: var(--color-text);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .navbar__nav {
     display: block;
   }

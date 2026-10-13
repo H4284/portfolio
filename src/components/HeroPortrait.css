@@ -1,0 +1,54 @@
+.hero-portrait {
+  position: relative;
+  z-index: 1;
+  width: clamp(200px, 28vw, 280px);
+  margin: 0;
+}
+
+.hero-portrait__glow {
+  position: absolute;
+  z-index: 0;
+  inset: -18%;
+  background: radial-gradient(
+    circle,
+    rgba(79, 70, 229, 0.35) 0%,
+    rgba(6, 182, 212, 0.12) 45%,
+    transparent 70%
+  );
+  filter: blur(28px);
+  pointer-events: none;
+}
+
+.hero-portrait__ring {
+  position: relative;
+  z-index: 1;
+  padding: 4px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  box-shadow: 0 0 60px rgba(79, 70, 229, 0.35);
+}
+
+.hero-portrait__frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 50%;
+  background: var(--bg);
+}
+
+.hero-portrait__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 28%;
+  transform: scale(1.5);
+  transform-origin: center 28%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-portrait__glow {
+    filter: blur(20px);
+  }
+}

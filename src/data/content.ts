@@ -176,11 +176,18 @@ export const projects = [
 
 export const timeline = [
   {
-    period: 'Oct 2023 – Jun 2026',
-    title: 'Programming',
-    organization: 'AAB College, Prishtina',
+    period: 'Oct 2026 – Present',
+    title: 'Junior Software Developer',
+    organization: 'Thrio',
     description:
-      'Software development focused on full-stack web applications using ASP.NET Core, C#, Entity Framework Core, and RESTful APIs. Frontend development with HTML5, CSS3, JavaScript, Bootstrap, and Razor Views. Database design with SQL Server, authentication and RBAC, API integration, and scholarship system development with predictive risk algorithms. EQF level 6.',
+      'Working as a Junior Software Developer at Thrio, building and maintaining web applications with React, Node.js, JavaScript, and Webflow, while continuing to apply QA/software testing practices and Cursor/AI-assisted development.',
+  },
+  {
+    period: '1 Jul 2026 – 30 Sep 2026',
+    title: 'Junior Software Developer Intern',
+    organization: 'Thrio',
+    description:
+      'Internship working with React, Node.js, JavaScript, and Webflow, with experience in QA/software testing and Cursor/AI-assisted development.',
   },
   {
     period: 'Mar 2026 – Aug 2026',
@@ -190,11 +197,11 @@ export const timeline = [
       'Currently enrolled in a .NET Developer training program focusing on C#, ASP.NET Core, Entity Framework Core, and RESTful APIs. EQF level 5.',
   },
   {
-    period: 'Jul 2026 – Present',
-    title: 'Junior Software Developer Intern',
-    organization: 'Thrio',
+    period: 'Oct 2023 – Jun 2026',
+    title: 'Programming',
+    organization: 'AAB College, Prishtina',
     description:
-      'Currently ongoing internship working with React, Node.js, JavaScript, and Webflow, with experience in QA/software testing and Cursor/AI-assisted development.',
+      'Software development focused on full-stack web applications using ASP.NET Core, C#, Entity Framework Core, and RESTful APIs. Frontend development with HTML5, CSS3, JavaScript, Bootstrap, and Razor Views. Database design with SQL Server, authentication and RBAC, API integration, and scholarship system development with predictive risk algorithms. EQF level 6.',
   },
 ];
 

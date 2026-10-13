@@ -42,7 +42,27 @@
   border-radius: 50%;
   background: var(--color-bg);
   border: 2px solid var(--color-accent-secondary);
+}
+
+.timeline__marker--current {
   box-shadow: 0 0 12px rgba(6, 182, 212, 0.4);
+  animation: timeline-pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes timeline-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 10px rgba(6, 182, 212, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 18px rgba(6, 182, 212, 0.65);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .timeline__marker--current {
+    animation: none;
+  }
 }
 
 .timeline__content {

@@ -2,6 +2,7 @@ import './HeroSection.css';
 import { site } from '../data/content';
 import { Button } from '../components/Button';
 import { HeroVisual } from '../components/HeroVisual';
+import { HeroPortrait } from '../components/HeroPortrait';
 import { FadeIn } from '../components/FadeIn';
 
 export function HeroSection() {
@@ -56,9 +57,13 @@ export function HeroSection() {
             </div>
           </FadeIn>
         </div>
-        <FadeIn delay={200}>
-          <HeroVisual />
-        </FadeIn>
+
+        <div className="hero__aside">
+          <div className="hero-composition">
+            <HeroPortrait />
+            <HeroVisual />
+          </div>
+        </div>
       </div>
     </section>
   );

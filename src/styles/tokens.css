@@ -1,18 +1,25 @@
 :root {
-  --color-bg: #08080d;
+  --bg: #08080d;
+  --text: #e8e8ef;
+  --muted: #9494a8;
+  --accent-from: #6366f1;
+  --accent-to: #06b6d4;
+  --radius: 16px;
+
+  --color-bg: var(--bg);
   --color-bg-elevated: #0f0f16;
   --color-bg-card: rgba(255, 255, 255, 0.04);
   --color-bg-glass: rgba(255, 255, 255, 0.06);
 
-  --color-text: #e8e8ef;
-  --color-text-muted: #9494a8;
+  --color-text: var(--text);
+  --color-text-muted: var(--muted);
   --color-text-subtle: #6b6b7d;
 
-  --color-accent: #6366f1;
-  --color-accent-secondary: #06b6d4;
+  --color-accent: var(--accent-from);
+  --color-accent-secondary: var(--accent-to);
   --color-accent-glow: rgba(99, 102, 241, 0.35);
 
-  --gradient-primary: linear-gradient(135deg, #6366f1 0%, #06b6d4 100%);
+  --gradient-primary: linear-gradient(135deg, var(--accent-from) 0%, var(--accent-to) 100%);
   --gradient-subtle: linear-gradient(
     135deg,
     rgba(99, 102, 241, 0.15) 0%,
@@ -30,11 +37,11 @@
     );
 
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
 
   --radius-sm: 8px;
   --radius-md: 12px;
-  --radius-lg: 16px;
+  --radius-lg: var(--radius);
   --radius-xl: 24px;
   --radius-full: 9999px;
 
@@ -45,10 +52,11 @@
   --border-subtle: 1px solid rgba(255, 255, 255, 0.08);
   --border-glass: 1px solid rgba(255, 255, 255, 0.12);
 
-  --nav-height: 72px;
+  --nav-height: 70px;
   --nav-height-compact: 60px;
-  --section-padding: clamp(4rem, 8vw, 7rem);
-  --container-max: 1140px;
+  --section-padding: clamp(3rem, 7vw, 7rem);
+  --container-max: 1200px;
+  --container-pad: 24px;
 
   --space-card: 2rem;
   --space-card-mobile: 1.5rem;
@@ -58,6 +66,6 @@
   --card-hover-border: rgba(99, 102, 241, 0.25);
 
   --transition-fast: 150ms ease;
-  --transition-base: 250ms ease;
+  --transition-base: 200ms ease;
   --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
