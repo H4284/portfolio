@@ -59,10 +59,10 @@
 }
 
 .hero-visual__code {
-  padding: 20px;
+  padding: 16px 20px;
   font-family: var(--font-mono);
   font-size: 13px;
-  line-height: 1.7;
+  line-height: 1.6;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
